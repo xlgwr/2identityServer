@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "56b9472c-0d26-4c2b-bb59-6d8f14ffe7d9",
+		"name": "identityserver",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:7007/api/Home/GetMsg",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkYxNTAzRENBQkNFRUYzNTNDNTZCMjNFRTJDNzA2OTgwIiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE2MTg4MTEwNjgsImV4cCI6MTYxODgxNDY2OCwiaXNzIjoiaHR0cDovLzEyNy4wLjAuMTo3MDQwIiwiYXVkIjpbIkdvb2RzU2VydmljZSIsIk9yZGVyU2VydmljZSIsIlByb2R1Y3RTZXJ2aWNlIl0sImNsaWVudF9pZCI6ImNsaWVudDEiLCJqdGkiOiI1RTlCMjVEMUVDOEM4NkQ5REJGMjc0QjJBRjhFRjM2NSIsImlhdCI6MTYxODgxMTA2OCwic2NvcGUiOlsiR29vZHNTZXJ2aWNlIiwiT3JkZXJTZXJ2aWNlIiwiUHJvZHVjdFNlcnZpY2UiXX0.Uf3aiIZPGAfk3uDQitpKF4dWp49V4-SPlfvyCRowzrEw4K2wHgjzOVTD2x4mBHYm0eUuO2XyWZcMhctMmzr7nGGlk736cXux8LF1OAie7PJvsZ4BM8c-9Kwd5X8xT-4Q9O3iyMYToX0hzvo7zbNwmGw69F5YNwbk0QLvU14eNVvHdYGs-dxuIA3-Gju_33laNkWEj6rtXDWp9FyfJ1k6YTOnrGR8bnx_boKObcpaRN_hA0C2Vgh3r5cfbLxpHfqj4cTu1H6Jk85NANA17FzyNSEVj4ywVjnNqUTw0RKQylSmGLvyVMVG3e0joLCFn7StjC0aQRXr9hM-iMK-HDKMAA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:7007/api/Home/GetMsg",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7007",
+					"path": [
+						"api",
+						"Home",
+						"GetMsg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:7040/connect/token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "client1",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "0001",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:7040/connect/token",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7040",
+					"path": [
+						"connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
